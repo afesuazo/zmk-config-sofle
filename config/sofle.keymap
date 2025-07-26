@@ -32,14 +32,14 @@
 
 // |               |  Z  |  X  |  C   |  V   |  B        |  MUTE            |  |             |  N         |   M   |   ,   |     .    |   /   |     =     |
 
-//                       |     | ALT  | CTRL | BKSPC (L2)|  ENTER (COMMAND) |  | DEL (SHIFT) | SPACE (L2) |       |       |  SETTING |
+//                       |     | ALT  | CTRL | BKSPC (L2)|  ENTER (COMMAND) |  | DEL (COMMAND) | SPACE (L2) |       |       |  SETTING |
 
           bindings = <
 &kp GRAVE      &kp N1   &kp N2   &kp N3   &kp N4    &kp N5                                           &kp N6             &kp N7    &kp N8     &kp N9    &kp N0    &kp MINUS
 &kp TAB        &kp Q    &kp W    &kp E    &kp R     &kp T                                            &kp Y              &kp U     &kp I      &kp O     &kp P     &kp BSLH
 &mt LSHFT ESC  &kp A    &kp S    &kp D    &kp F     &kp G                                            &kp H              &kp J     &kp K      &kp L     &kp SEMI  &mt RSHFT SQT
 &none          &kp Z    &kp X    &kp C    &kp V     &kp B             &kp C_MUTE      &none          &kp N              &kp M     &kp COMMA  &kp DOT   &kp FSLH  &kp EQUAL
-                       &none    &kp LALT &kp LCTRL &lt SYMBOLS BSPC  &mt LGUI DEL    &mt RSHFT RET  &lt SYMBOLS SPACE  &none     &none      &tog SETTING
+                       &none    &kp LALT &kp LCTRL &mt LSHFT BSPC  &mt LGUI DEL    &mt LGUI RET  &mt LSHFT SPACE  &lt SYMBOLS     &none      &tog SETTING
 
           >;
 
